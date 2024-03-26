@@ -1,0 +1,298 @@
+
+<html>
+
+<head>
+  <title>Product Order Form</title>
+  <link rel="icon" type="image" href="th.jpeg" />
+
+  <style>
+    body {
+      background: lightsteelblue;
+      width: 100%;
+      margin: 0;
+    }
+
+    div.container {
+      width: 100%;
+      margin: 0 auto;
+      background-color: white;
+      padding: 16px;
+      max-width: 750px;
+    }
+
+    div.card {
+      width: 33%;
+      margin: 0 10px;
+      border: 1px solid rgba(195, 202, 216, 0.75);
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+
+    input[type=text] {
+      width: 40%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+    }
+
+    .button {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .card-img {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .card-spec {
+      width: 100%;
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    .spec {
+      width: 50%;
+    }
+
+    .card-desc {
+      padding: 16px;
+      width: 100%;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>My Products</h1>
+    <div style="display:flex">
+      <div class="card">
+        <div class="card-img">
+          <input type="checkbox" id="img1" name="img1" value="img1">
+          <img src="task1.jpg" width="200" height="200">
+        </div>
+        <div class="card-desc">
+          <span>T-shirt</span>
+          <p> $1.00</p>
+          <div class="card-spec">
+            <div class="spec">
+              <label for="Shirt">Quantity:</label><br>
+              <select Quantity="shirt" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="spec">
+              <label for="Shirt">Color:</label><br>
+              <select color="shirt" id="Green">
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Pink">Pink</option>
+              </select>
+            </div>
+          </div>
+          <div class="spec">
+            <label for="Shirt">T-shirt Size:</label><br>
+            <select T-shirt shize="shirt" id="Xs">
+              <option value="XS">Xs</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <input type="checkbox" id="img2" name="img2" value="img2">
+          <img src="task2.jpg" width="200" height="200">
+        </div>
+        <div class="card-desc">
+          <span>Sweatshirt</span><br>
+          <p> $1.00</p>
+          <div class="card-spec">
+            <div class="spec">
+              <label for="SweatShirt">Quantity:</label><br>
+              <select Quantity="Sweatshirt" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="spec">
+              <label for="Shirt">Color:</label><br>
+              <select color="shirt" id="Green">
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Pink">Pink</option>
+              </select>
+            </div>
+          </div>
+          <div class="spec">
+            <label for="Shirt">Sweat-shirt Size:</label><br>
+            <select T-shirt shize="shirt" id="Xs">
+              <option value="XS">Xs</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <input type="checkbox" id="img3" name="img3" value="img3">
+          <img src="task3.jpg" width="200" height="200">
+        </div>
+
+        <div class="card-desc">
+          <span>Shoes</span><br>
+          <p> $1.00</p>
+          <div class="card-spec">
+            <div class="spec">
+              <label for="Shoes">Quantity:</label><br>
+              <select Quantity="Shoes" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="spec">
+              <label for="Shoe size">shoe Size:</label><br>
+              <select T-shoe shize="shoe" id="8">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h1>Product Order Form</h1>
+    <p>Please make sure to fill in the required fields and submit this form to complete your order.</p>
+
+    <form>
+      <font size="4">
+        <p>Full Name </p>
+      </font>
+      <div style="width: 100%; display: flex;">
+        <div style="width: calc(49% - 8px); margin-right: 8px;">
+          <input type="text" name="" placeholder="" style="width: 100%"><br>
+          <label for="fname">First Name</label>
+        </div>
+
+        <div style="width: calc(49% - 8px);">
+          <input type="text" name="" placeholder="" style="width: 100%"><br>
+          <label for="lname">Last Name</label>
+        </div>
+      </div>
+      <br>
+      <font size="4">
+        <p>E-mail </p>
+      </font>
+      <input type="text" name="" placeholder="ex; myname@example.com"> <br>
+      <font size="4">
+        <p>Contact Number </p>
+      </font>
+      <input type="text" name="" placeholder="(000) 000-0000"> <br>
+      <font size="4">
+        <p> Billing Address </p>
+      </font>
+      <input type="text" name="" placeholder="" style="width: 100%">
+      <label>Street address</label><br>
+      <input type="text" name="" placeholder="" style="width: 100%">
+      <label>Street address line 2</label>
+      <br><br>
+
+      <div style="width: 100%; display: flex;">
+        <div style="width: calc(49% - 8px); margin-right: 8px;">
+          <input type="text" name="" placeholder="" style="width: 100%">
+          <label>City</label><br>
+        </div>
+
+        <div style="width: calc(49% - 8px);">
+          <input type="text" name="" placeholder="" style="width: 100%">
+          <label>State / Province</label><br>
+        </div>
+      </div>
+
+      <br>
+
+      <div style="width: 100%; display: flex;">
+        <div style="width: calc(49% - 8px); margin-right: 8px;">
+          <input type="text" name="" placeholder="" style="width: 100%">
+          <label>Postal / Zip Code</label><br>
+        </div>
+
+        <div style="width: calc(49% - 8px);">
+          <select style="width: 100%; height: 50px;">
+            <option>Please select </option>
+            <option>India</option>
+            <option>America</option>
+            <option>London</option>
+          </select>
+          <label>Country</label><br>
+        </div>
+      </div>
+
+      <br> <br>
+      <font size="4">
+        <p> Is shipping address same as billing address? </p>
+      </font>
+      <input type="radio" <h1> Yes </h1> <br>
+      <input type="radio" <h1> No </h1> <br> <br>
+
+      <font size="4">
+        <p> Send Gift? </p>
+      </font>
+      <input type="radio" <h1> Yes </h1> <br>
+      <input type="radio" <h1> No </h1>
+      <br> <br>
+      <font size="4">
+        <p> Special Instructions </p>
+      </font>
+      <textarea rows="8" cols="90"></textarea> <br> <br> <br>
+      <div style="text-align: center;">
+        <button class="button">Submit</button>
+      </div>
+      </label>
+    </form>
+  </div>
+
+</body>
+
+</html>
